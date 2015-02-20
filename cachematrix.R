@@ -44,8 +44,8 @@ cacheSolve <- function(x, ...)
 	return(myinverse)
 }
 
-## To test the function 
+## To test the function comment out the last two lines
 ## Thanks to Scott von Kleeck for the test matrix - I used more time to find out a inversable matrix than for coding :-)
 
-mymatrix <- matrix(c(1, 3, 2, 4),nrow=2,ncol=2)
-solve(mymatrix)
+#mymatrix <- matrix(c(1, 3, 2, 4),nrow=2,ncol=2)
+#solve(mymatrix)
