@@ -7,14 +7,18 @@
 
 makeCacheMatrix <- function(x = matrix()) {
 
+	# Prepare the cache
 	myinverse <- NULL
 	set <- function(y){
 		x <<- y
 		myinverse <<- NULL
 	}
+	# Calculate the inverse 
 	get <- function() x
 	setinverse <- function(solve) myinverse <<- solve 
 	getinverse <- function() myinverse
+
+	# Define a list
 	list(set= set, get = get,
 	setinverse = setinverse,
 	getinverse = getinverse)
